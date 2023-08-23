@@ -18,7 +18,6 @@ dataForm.addEventListener("submit", (event) => {
     const age = document.getElementById("age").value;
     const gender = document.getElementById("gender").value;
     const color = document.getElementById("color").value;
-
     const newRow = document.createElement("tr");
     newRow.innerHTML = `
         <td>${firstName}</td>
