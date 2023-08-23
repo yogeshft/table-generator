@@ -29,7 +29,6 @@ dataForm.addEventListener("submit", (event) => {
         <td><span style="background-color: ${color}; width: 20px; height: 20px; display: inline-block;"></span></td>
     `;
     dataTableBody.appendChild(newRow);
-
     dataForm.reset();
     formContainer.classList.add("hidden");
     deleteBtn.style.display = "inline";
@@ -44,12 +43,10 @@ function deleteRows() {
         alert("There should be at least two row");
     }
 }
-
 // Cancel button functionality
 const cancelButton = document.getElementById("cancel-button");
 cancelButton.addEventListener("click", () => {
     formContainer.classList.add("hidden");
     deleteBtn.style.display = "inline";
-    overlay.style.display = "none"; // Hide the overlay when canceling
-});
-
+    overlay.style.display = "none"; 
+});  

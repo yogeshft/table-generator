@@ -5,7 +5,6 @@ body {
   font: 100% / normal sans-serif;
 }
 
-
 /* table */
 table {
     font-family: arial, sans-serif;
@@ -22,7 +21,6 @@ table {
   tr:nth-child(even) {
     background-color: #dddddd;
   }
-
   .hidden{
     display: none;
   }
@@ -39,7 +37,7 @@ table {
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
-   transition-timing-function: ease
+   transition-timing-function: ease;
   }
 
   input[type=text],input[type=number],input[type=email],input[type=text],input[type=tel],select{
@@ -64,7 +62,6 @@ table {
     border: none;
     border-radius: 10px;
   }
-
   button:hover{
     background-color: aqua;
     transition: 1.2s fade-in;
