@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task-1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <table id="data-table">
+        <!-- heading of the table -->
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Mobile Number</th>
+                <th>Email Address</th>
+                <th>Age</th>
+                <th>Gender</th>
+                <th>Color</th> 
+            </tr>
+        </thead>
+
+        <tbody>
+            <!-- Data will be inserted here dynamically -->
+        </tbody>
+    </table>
+
+    <!-- Button to add data -->
+    <button id="add-data-button">Add Data</button>
+
+    <!-- Form for adding data -->
+    <div id="form-container" class="hidden">
+        <h2>Add Person</h2>
+        <form id="data-form">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" required><br>
+
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" required><br>
+
+            <label for="mobile-number">Mobile Number:</label>
+            <input type="tel" id="mobile-number" required><br>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" required><br>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" required><br>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select><br>
+
+            <label for="color">Color:</label>
+            <input type="color" id="color" required><br>
+
+            <button type="submit">Submit</button>
+            <button type="button" id="cancel-button">Cancel</button>
+        </form>
+    </div>
+
+    <!-- Delete entry button -->
+    <button onclick="deleteRows()" id="delete-btn">Delete Row</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
